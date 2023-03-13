@@ -1,9 +1,15 @@
-﻿@model IEnumerable<Root>
+﻿@using Rick_and_Morty_API.Models
+@model Root
 
 
-@foreach(var item in Model)
-{
-    <h3>@item.Info</h3>
-    <h3>@item.Results</h3>
-    
-}
+
+<div class="col m-1">
+    <p><strong>Characters</strong></p>
+    @foreach (var character in Model.Results)
+    {
+        <ul>
+            <li>Name:  @character.Name</li>
+            <li>Species: @character.Species Location: @character.Location</li>
+        </ul>
+    }
+</div>

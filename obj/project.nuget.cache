@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "b+SmxpgsC58f3QwsmNVTeaNq3HJEDCETp3Obai5dZNAD7WVnrM5MkZIgcd802Kja5/TGvtudPIVn67Jvskr0mA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\Rick_and_Morty_API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kelii\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -3,13 +3,24 @@
 
 
 
-<div class="col m-1">
+<div class="charCollection">
     <p><strong>Characters</strong></p>
     @foreach (var character in Model.Results)
     {
-        <ul>
-            <li>Name:  @character.Name</li>
-            <li>Species: @character.Species Location: @character.Location</li>
+        <ul style="list-style:none">
+            <li style="color:chartreuse">Name: @character.Name</li>
+            <li>Species: @character.Species</li>
+            <li>Gender: @character.Gender</li>
+            <li>Type: @character.Type</li>
+            <li>Status: @character.Status</li>
+            <li><img src=@character.Image></li>
         </ul>
     }
+</div>
+<div>
+    
+        <a href=@Model.Info.Prev></a>
+
+        <a href=@Model.Info.Next></a>
+    
 </div>

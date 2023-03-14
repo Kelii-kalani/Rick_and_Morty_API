@@ -11,14 +11,15 @@
 <body>
     <header>
         <div class="topnav">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Characters">Rick and Morty</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="#Characters">Characters</a>
-            <a href="#Episodes">Episode</a>
-            <input type="text" placeholder="Search..">
+            <form asp-action="Index" method="get">
+                <div class="form-actions no-color">
+                    <p>
+                        Find by name: <input type="text" name="Searchtring" value="" />
+                        <input type="submit" value="Search" class="btn btn-default" /> |
+                        <a href="https://localhost:7281/RickAndMorty">Characters</a>
+                    </p>
+                </div>
+            </form>
         </div>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">

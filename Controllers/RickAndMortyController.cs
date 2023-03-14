@@ -18,5 +18,20 @@ namespace Rick_and_Morty_API.Controllers
 
             return View(root);
         }
+
+        public IActionResult CharacterSearch()
+        {
+            var client = new HttpClient();
+
+            var userInput = Console.ReadLine();
+
+            var url = $"https://rickandmortyapi.com/api/character?name={userInput}";
+
+            var response = client.GetStringAsync(url).Result;
+
+            var root = JsonConvert.DeserializeObject<Root> (response);
+
+            return View(root);
+        }
     }
 }

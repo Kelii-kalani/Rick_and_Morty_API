@@ -2,6 +2,11 @@
 @model Root
 
 
+<div>
+
+    <p><link href=@Model.Info.Prev>Previous Page</p>
+    <p><link href=@Model.Info.Next>Next Page</p>
+</div>
 
 <div class="charCollection">
     <p><strong>Characters</strong></p>
@@ -16,11 +21,4 @@
             <li><img src=@character.Image></li>
         </ul>
     }
-</div>
-<div>
-    
-        <a href=@Model.Info.Prev></a>
-
-        <a href=@Model.Info.Next></a>
-    
 </div>

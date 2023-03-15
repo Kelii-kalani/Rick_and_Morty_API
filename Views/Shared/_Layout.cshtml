@@ -14,9 +14,9 @@
             <form method="get" id="searchform"  role="search">
                 <div class="form-actions no-color">
                     <p>
-                        Find by name: <input type="text" name="Searchtring"  />
-                       <input type="submit" value="Search" class="btn btn-default" /> |
-                        <a href="https://localhost:7281/RickAndMorty">Characters</a>
+                        Find by name: <input asp-action="Index" asp-route-resource_url="https://rickandmortyapi.com/api/character/?name"/>
+                        <input type="submit" value="Search" asp-route-resource_url="https://rickandmortyapi.com/api/character/?name" class="btn btn-default" /> |
+                        <a href="https://localhost:7281/RickAndMorty">All Characters</a>
                     </p>
                 </div>
             </form>

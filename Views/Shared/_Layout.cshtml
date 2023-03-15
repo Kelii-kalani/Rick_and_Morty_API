@@ -11,11 +11,11 @@
 <body>
     <header>
         <div class="topnav">
-            <form asp-action="Index" method="get">
+            <form method="get" id="searchform" action="https://rickandmortyapi.com/api/character?name=" role="search">
                 <div class="form-actions no-color">
                     <p>
-                        Find by name: <input type="text" name="Searchtring" value="" />
-                        <input type="submit" value="Search" class="btn btn-default" /> |
+                        Find by name: <input type="text" name="Searchtring"  />
+                       <input type="submit" value="Search" class="btn btn-default" /> |
                         <a href="https://localhost:7281/RickAndMorty">Characters</a>
                     </p>
                 </div>

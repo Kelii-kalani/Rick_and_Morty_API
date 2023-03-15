@@ -3,9 +3,12 @@
 
 
 <div>
-
-    <p><link href=@Model.Info.Prev>Previous Page</p>
-    <p><link href=@Model.Info.Next>Next Page</p>
+    <ul style="list-style:none">
+        <li>Total Characters: @Model.Info.Count</li>
+        <li>Total Pages: @Model.Info.Pages</li>
+    </ul>
+    <a type="button" href=@Model.Info.Prev>Previous Page</a>
+    <a type="button" href=DOMParser(@Model.Info.Next)>Next Page</a>
 </div>
 
 <div class="charCollection">

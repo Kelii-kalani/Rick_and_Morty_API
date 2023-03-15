@@ -8,15 +8,22 @@ namespace Rick_and_Morty_API.Controllers
     {
         public IActionResult Index([FromQuery(Name = "resource_url")] string resourceUrl = "https://rickandmortyapi.com/api/character")
         {
-            var client = new HttpClient();
+            if (resourceUrl == "https://rickandmortyapi.com/api/character")
+            {
+                var client = new HttpClient();
 
-            var url = resourceUrl;
+                var url = resourceUrl;
 
-            var response = client.GetStringAsync(url).Result;
+                var response = client.GetStringAsync(url).Result;
 
-            var root = JsonConvert.DeserializeObject<Root>(response);
+                var root = JsonConvert.DeserializeObject<Root>(response);
 
-            return View(root);
+                return View(root);
+            }
+            else
+            {
+                return View("Page invalid");
+            }
         }
     }
 }

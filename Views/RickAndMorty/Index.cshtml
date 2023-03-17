@@ -3,6 +3,12 @@
 
 <body>
     <header>
+        <form>
+            <p>
+                Title: <input type="text"  />
+                <a class="btn btn-success" href="@Url.Action("CallName","RickAndMortyController", new {name=@Model.Results })">Start</a>
+            </p>
+        </form>
         <div>
             @if (@Model.Info.Prev != null)
             {
@@ -20,10 +26,12 @@
             {
                 <ul style="list-style:none">
                     <li style="color:chartreuse">Name: @character.Name</li>
-                    <li>Species: @character.Species</li>
-                    <li>Gender: @character.Gender</li>
-                    <li>Type: @character.Type</li>
-                    <li>Status: @character.Status</li>
+                    <li style="color:chartreuse">Species: @character.Species</li>
+                    <li style ="color:chartreuse">Gender: @character.Gender</li>
+                    <li style="color:chartreuse">Type: @character.Type</li>
+                    <li style="color:chartreuse">Status: @character.Status</li>
+                    <li style="color:chartreuse">Origin: @character.Origin.Name</li>
+                    <li style="color:chartreuse">Location: @character.Location.Name</li>
                     <li><img src=@character.Image></li>
                 </ul>
             }

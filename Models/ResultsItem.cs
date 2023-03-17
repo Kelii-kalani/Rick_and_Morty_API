@@ -1,4 +1,6 @@
-﻿namespace Rick_and_Morty_API.Models
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Rick_and_Morty_API.Models
 {
     public class ResultsItem
     {

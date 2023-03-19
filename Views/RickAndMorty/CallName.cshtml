@@ -1,0 +1,19 @@
+﻿@using Rick_and_Morty_API.Models
+@model Root
+
+<<div class="charCollection">
+    <p><strong>Characters</strong></p>
+    @foreach (var character in Model.Results)
+    {
+        <ul style="list-style:none">
+            <li style="color:chartreuse">Name: @character.Name</li>
+            <li style="color:chartreuse">Species: @character.Species</li>
+            <li style="color:chartreuse">Gender: @character.Gender</li>
+            <li style="color:chartreuse">Type: @character.Type</li>
+            <li style="color:chartreuse">Status: @character.Status</li>
+            <li style="color:chartreuse">Origin: @character.Origin.Name</li>
+            <li style="color:chartreuse">Location: @character.Location.Name</li>
+            <li><img src=@character.Image></li>
+        </ul>
+    }
+</div>

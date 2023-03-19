@@ -3,23 +3,13 @@
 
 <body>
     <header>
-        <form>
-            <p>
-                Title: <input type="text"  />
-                <a class="btn btn-success" href="@Url.Action("CallName","RickAndMortyController", new {name=@Model.Results })">Start</a>
-            </p>
+        <form id="form" role="search" asp asp-controller="RickAndMorty" asp-action="CallName">
+            <input type="search" id="query" name="name"
+                   placeholder="Search..."
+                   aria-label="Search through site content">
+            <button>Search</button>
         </form>
-        <div>
-            @if (@Model.Info.Prev != null)
-            {
-                <a asp-action="Index" asp-route-resource_url="@Model.Info.Prev" class="btn btn-lg btn-success">Previous Page</a>
-            }
-            @if (@Model.Info.Next != null)
-            {
-                <a asp-action="Index" asp-route-resource_url="@Model.Info.Next" class="btn btn-lg btn-success">Next Page</a>
-            }
-            </div>
-
+       
         <div class="charCollection">
             <p><strong>Characters</strong></p>
             @foreach (var character in Model.Results)
@@ -34,6 +24,16 @@
                     <li style="color:chartreuse">Location: @character.Location.Name</li>
                     <li><img src=@character.Image></li>
                 </ul>
+            }
+        </div>
+        <div>
+            @if (@Model.Info.Prev != null)
+            {
+                <a asp-action="Index" asp-route-resource_url="@Model.Info.Prev" class="btn btn-lg btn-success">Previous Page</a>
+            }
+            @if (@Model.Info.Next != null)
+            {
+                <a asp-action="Index" asp-route-resource_url="@Model.Info.Next" class="btn btn-lg btn-success">Next Page</a>
             }
         </div>
     </header>

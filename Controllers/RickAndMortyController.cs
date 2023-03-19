@@ -5,6 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Linq;
 using System.Xml.Linq;
 using Newtonsoft.Json.Linq;
+using System.Reflection.Metadata;
 
 namespace Rick_and_Morty_API.Controllers
 {
@@ -38,26 +39,17 @@ namespace Rick_and_Morty_API.Controllers
             }
         }
 
-        public IActionResult CallName()
+        public IActionResult CallName(string name)
         {
             var client = new HttpClient();
-
-            string name = Console.ReadLine();
 
             var url = $"https://rickandmortyapi.com/api/character/?name={name}";
 
             var response = client.GetStringAsync(url).Result;
 
-            var api = JsonConvert.DeserializeObject<ResultsItem>(response);
+            var resultsItem = JsonConvert.DeserializeObject<Root>(response);
 
-            //var characterName = api.Name;
-            //var species = api.Species;
-            //var gender = api.Gender;
-            //var type = api.Type;
-            //var status = api.Status;
-            //var image = api.Image;
-
-            return View(api);
+            return View(resultsItem);
 
         }
     }

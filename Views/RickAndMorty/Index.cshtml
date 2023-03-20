@@ -6,14 +6,16 @@
         <div class="charCollection">
             @foreach (var character in Model.Results)
             {
-                    <img src=@character.Image>
-                    <h4 style="color:chartreuse"><b>Name: @character.Name</b></h4>
-                    <p style="color:chartreuse">Species: @character.Species</p>
-                    <p style ="color:chartreuse">Gender: @character.Gender</p>
-                    <p style="color:chartreuse">Type: @character.Type</p>
-                    <p style="color:chartreuse">Status: @character.Status</p>
-                    <p style="color:chartreuse">Origin: @character.Origin.Name</p>
-                    <p style="color:chartreuse">Location: @character.Location.Name</p>
+                <ul style="list-style:none" class="card">
+                    <li><img src=@character.Image></li>
+                    <li style="color:chartreuse"><b>Name: @character.Name</b></li>
+                    <li style="color:chartreuse">Species: @character.Species</li>
+                    <li style ="color:chartreuse">Gender: @character.Gender</li>
+                    <li style="color:chartreuse">Type: @character.Type</li>
+                    <li style="color:chartreuse">Status: @character.Status</li>
+                    <li style="color:chartreuse">Origin: @character.Origin.Name</li>
+                    <li style="color:chartreuse">Location: @character.Location.Name</li>
+                </ul>
             }
         </div>
         <div>

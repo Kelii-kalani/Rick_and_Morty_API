@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\Rick_and_Morty_API.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\images\\118767.gif",
+      "PackagePath": "staticwebassets\\css\\images\\118767.gif"
+    },
+    {
+      "Id": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\images\\Rick And Morty Jerry Mobile Game.gif",
+      "PackagePath": "staticwebassets\\css\\images\\Rick And Morty Jerry Mobile Game.gif"
+    },
+    {
+      "Id": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\images\\images.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\images\\rickand-morty-psychedelic.gif",
+      "PackagePath": "staticwebassets\\css\\images\\rickand-morty-psychedelic.gif"
+    },
+    {
       "Id": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

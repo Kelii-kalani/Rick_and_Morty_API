@@ -11,7 +11,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="images\" />
+    <Folder Include="wwwroot\css\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\images\118767.gif" />
+    <None Include="wwwroot\css\images\images.jpg" />
+    <None Include="wwwroot\css\images\Rick And Morty Jerry Mobile Game.gif" />
+    <None Include="wwwroot\css\images\rickand-morty-psychedelic.gif" />
   </ItemGroup>
 
 </Project>

@@ -1,3 +1,103 @@
 body {
-    background-image: url('c:\users\kelii\source\repos\rick_and_morty_api\images\epic-rick-and-morty.gif');
+    background-image: url('images/118767.gif');
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-attachment:fixed;
+}
+
+.glow {
+    font-family: MV Boli;
+    font-size: 80px;
+    color: #00ff00;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #7fff00, 0 0 40px #7fff00, 0 0 50px #adff2f, 0 0 60px #adff2f, 0 0 70px #adff2f;
+    }
+
+    to {
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #228b22, 0 0 40px #228b22, 0 0 50px #228b22, 0 0 60px #32cd32, 0 0 70px #32cd32, 0 0 80px #008000;
+    }
+}
+
+a:link, a:visited {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+a:hover {
+    background-color: #7fff00;
+}
+a:active {
+    background-color: #adff2f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: chartreuse;
+}
+
+    .topnav .search-container {
+        float: right;
+        font-size: 20px;
+    }
+
+    .topnav input[type=text] {
+        padding: 8px;
+        margin-top: 10px;
+        font-size: 20px;
+        border: none;
+    }
+
+    .topnav .search-container button {
+        float: right;
+        padding: 6px 10px;
+        margin-top: 1px;
+        margin-right: 16px;
+        background: #00ff00;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+        .topnav .search-container button:hover {
+            background: #7fff00;
+        }
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: right;
+    }
+
+        .topnav a, .topnav input[type=text], .topnav .search-container button {
+            float: none;
+            display: block;
+            text-align: left;
+            width: 100%;
+            margin: 0;
+            padding: 14px;
+        }
+
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+p{
+
 }

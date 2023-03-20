@@ -10,11 +10,19 @@
 </head>
 <body>
     <header>
-        <div>
-             |
-          <a class="characters" href="https://localhost:7281/RickAndMorty">All Characters</a>
+        <div class="topnav">
+            <a class="btn-lg btn-success" href="https://localhost:7281/RickAndMorty">See All Characters</a>
+            <div class="search-container">
+                <form id="form" role="search" asp asp-controller="RickAndMorty" asp-action="CallName">
+                    <input type="search" id="query" name="name"
+                           placeholder="Search..."
+                           aria-label="Search through site content">
+                    <button>Search</button>
+                </form>
+            </div>
         </div>
     </header>
+    <h1 class="glow">Rick And Morty</h1>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

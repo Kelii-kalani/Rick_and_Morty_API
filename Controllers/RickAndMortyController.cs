@@ -41,6 +41,7 @@ namespace Rick_and_Morty_API.Controllers
 
         public IActionResult CallName(string name)
         {
+            
             var client = new HttpClient();
 
             var url = $"https://rickandmortyapi.com/api/character/?name={name}";

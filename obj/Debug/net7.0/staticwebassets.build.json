@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mCG85K7c5FNnMUGGVDOXQwc7XOCtbflIS1ZLf2oQU2A=",
+  "Hash": "BRF32wNcwXMqfEY/lnBr4jXIsU2QTVHmwWfxxu+SVi4=",
   "Source": "Rick_and_Morty_API",
   "BasePath": "_content/Rick_and_Morty_API",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Rick_and_Morty_API.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\Audio\\Rick-and-Morty-Theme-Song.mp3",
+      "SourceId": "Rick_and_Morty_API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\",
+      "BasePath": "_content/Rick_and_Morty_API",
+      "RelativePath": "css/Audio/Rick-and-Morty-Theme-Song.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Audio\\Rick-and-Morty-Theme-Song.mp3"
     },
     {
       "Identity": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\images\\118767.gif",

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Rick_and_Morty_API.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\Audio\\Rick-and-Morty-Theme-Song.mp3",
+      "PackagePath": "staticwebassets\\css\\Audio\\Rick-and-Morty-Theme-Song.mp3"
+    },
+    {
       "Id": "C:\\Users\\kelii\\source\\repos\\Rick_and_Morty_API\\wwwroot\\css\\images\\118767.gif",
       "PackagePath": "staticwebassets\\css\\images\\118767.gif"
     },

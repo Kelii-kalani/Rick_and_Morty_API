@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/Rick_and_Morty_API.styles.css" asp-append-version="true" />
 </head>
 <body>
+    
     <header>
         <div class="topnav">
             <a class="btn-lg btn-success" href="https://localhost:7281/RickAndMorty">See All Characters</a>
@@ -27,6 +28,11 @@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
+    </div>
+    <div class="audio">
+        <audio controls="controls">
+           <source src="~/css/audio/rick-and-morty-theme-song.mp3" type="audio/mpeg" />
+        </audio>
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

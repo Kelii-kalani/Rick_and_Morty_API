@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\css\Audio\Rick-and-Morty-Theme-Song.mp3" />
     <None Include="wwwroot\css\images\118767.gif" />
     <None Include="wwwroot\css\images\images.jpg" />
     <None Include="wwwroot\css\images\Rick And Morty Jerry Mobile Game.gif" />

@@ -12,13 +12,6 @@ namespace Rick_and_Morty_API.Controllers
 
     public class RickAndMortyController : Controller
     {
-        private readonly ILogger<RickAndMortyController> _logger;
-
-        public RickAndMortyController(ILogger<RickAndMortyController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index([FromQuery(Name = "resource_url")] string resourceUrl = "https://rickandmortyapi.com/api/character")
         {
             if (resourceUrl.StartsWith("https://rickandmortyapi.com"))
@@ -41,17 +34,24 @@ namespace Rick_and_Morty_API.Controllers
 
         public IActionResult CallName(string name)
         {
-            
-            var client = new HttpClient();
+            string resourceUrl = $"https://rickandmortyapi.com/api/character/?name={name}";
 
-            var url = $"https://rickandmortyapi.com/api/character/?name={name}";
+            if (resourceUrl.StartsWith("https://rickandmortyapi.com"))
+            {
+                var client = new HttpClient();
 
-            var response = client.GetStringAsync(url).Result;
+                var url = resourceUrl;
 
-            var resultsItem = JsonConvert.DeserializeObject<Root>(response);
+                var response = client.GetStringAsync(url).Result;
 
-            return View(resultsItem);
+                var resultsItem = JsonConvert.DeserializeObject<Root>(response);
 
+                return View(resultsItem);
+            }
+            else
+            {
+                return View("invalid page");
+            }
         }
     }
 }
